@@ -1,7 +1,7 @@
 # Weather-CLI Application
 This application provides information about the weather in differnet cities.
 
-To initialize this application:
+### To initialize this application:
 run `npm i`
 
 To start the APP you need to have Token (API Key)
