@@ -1,17 +1,18 @@
-# weather-cli
+# Weather-CLI Application
 This application provides information about the weather in differnet cities.
 
 To initialize this application:
 run `npm i`
 
 To start the APP you need to have Token (API Key)
-To set the API key:
+
+### To set the API key:
 run `node weather.js -t <token>`
 
-To set the city:
+### To set the city:
 run `node weather.js -s <city>`
 
-To get Help info:
+### To get Help info:
 run `node weather.js -help`
 
 ## Getting Weather API key
