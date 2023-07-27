@@ -1,0 +1,29 @@
+# logs
+logs
+*.log
+
+# operating system files
+.DS_Store
+Thumbs.db
+
+# dependencies
+node_modules/
+
+# production build files
+dist/
+build/
+
+# environment variables
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# npm cache
+.npm
+
+# misc
+*.bak
+*.swp
