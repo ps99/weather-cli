@@ -1,5 +1,6 @@
 import chalk from 'chalk';
 import dedent from 'dedent-js';
+import { getIcon } from './api.service.js';
 
 const printError = (err) => {
 	console.log(chalk.bold.bgRed(' ERROR ') + ' ' + err);
@@ -24,8 +25,8 @@ const printWeather = (res) => {
 	console.log(
 		dedent`${chalk.black.black.bgCyan(' WEATHER: ')}
 		${res.name} city, ${res.sys.country}
-		${res.weather[0].description}
-		Temperature: ${res.main.temp} Celsius
+		${getIcon(res.weather[0].icon)}  ${res.weather[0].description}
+		Temperature: ${Math.round(res.main.temp)} Celsius
 		Pressure: ${res.main.pressure} hPa
 		Humidity: ${res.main.humidity} %
 		Wind: ${res.wind.speed} m/s
